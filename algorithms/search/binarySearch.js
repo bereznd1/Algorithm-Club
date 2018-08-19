@@ -75,4 +75,4 @@ console.log(result);
 // Notes on Binary Search:
 // ============================================
 
-// Big O notation of O(lg n) because of Nested For Loops.
+// Big O notation of O(lg n).
