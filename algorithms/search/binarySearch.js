@@ -4,7 +4,7 @@
 // - you have an array thats in chronological order, & a search element (you wanna find out at what index in the array that search element appears)
 // - add the MIN INDEX of array + MAX INDEX and DIVIDE BY 2 to find a position near the middle
 // - select the element at that middle index
-// - check to see if that selected element is LESS THAN or EQUAL TO the SEARCH ELEMENT
+// - check to see if that selected element is LESS THAN the SEARCH ELEMENT
 // - if its LESS, you make the MIN INDEX equal to the SELECTED ELEMENT'S INDEX + 1 (now you're only looking ABOVE that element)
 // - if its MORE, you make the MAX INDEX equal to the SELECTED ELEMENT'S INDEX - 1 (now you're only looking BELOW that element)
 // - you keep on running the comparison loop until the SELECTED ELEMENT is = TO the SEARCH ELEMENT
@@ -53,6 +53,7 @@ function binarySearch(numbersArr, searchElement) {
     }
   }
 
+  // If the searchElement is not found at all in the array, return false. 
   return false;
 }
 
@@ -75,4 +76,7 @@ console.log(result);
 // Notes on Binary Search:
 // ============================================
 
-// Big O notation of O(lg n).
+// - Big O notation of O(lg n).
+// - Binary Search: array must be in order before performing search.
+// - Linear Search: array doesn't have to be in order.
+// - Binary Search accesses data RANDOMLY; Linear Search accesses data SEQUENTIALLY
